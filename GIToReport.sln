@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Site", "..\..\..\", "{9465C6F0-ED04-474D-8939-03AEEF2F6479}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.1"
+		ProjectReferences = "{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|GIToReport.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4445"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4445\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4445"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4445\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4445"
+		VWDDynamicPort = "false"
+		SlnRelativePath = "..\..\..\..\Site\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIToReport", "GIToReport\GIToReport.csproj", "{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9465C6F0-ED04-474D-8939-03AEEF2F6479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9465C6F0-ED04-474D-8939-03AEEF2F6479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BBB9315-6143-4A27-B613-4EF9B78C54E9}
+	EndGlobalSection
+EndGlobal

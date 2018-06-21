@@ -65,20 +65,22 @@ namespace PX.Data.Maintenance.GI
 		private IReadOnlyDictionary<string, Type> ConvertTables(Report report)
 		{
 			var graph = new PXGraph();
-			Dictionary<string, Type> tableTypes = new Dictionary<string, Type>(StringComparer.OrdinalIgnoreCase);
+			var tableTypes = new Dictionary<string, Type>(StringComparer.OrdinalIgnoreCase);
 
 			foreach (var table in Base.Tables.Select().RowCast<GITable>()
-				.Distinct(t => t.Name)
 				.Where(t => !String.IsNullOrEmpty(t.Name) && !String.IsNullOrEmpty(t.Alias)))
 			{
 				Type type = PXBuildManager.GetType(table.Name, false);
 				if (type == null) continue;
 
 				tableTypes[table.Alias] = type;
+			}
 
+			foreach (var type in tableTypes.Values.Distinct())
+			{
 				var reportTable = new ReportTable(type.Name)
 				{
-					FullName = table.Name,
+					FullName = type.FullName,
 				};
 
 				PXCache cache = graph.Caches[type];
